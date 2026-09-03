@@ -4,44 +4,62 @@ import { HERO_IMAGE } from "@/lib/products";
 
 export default function Hero() {
   return (
-    <section className="mx-auto max-w-content px-5 pt-8 md:px-8 md:pt-12">
-      <div className="grid gap-6 md:grid-cols-[1.1fr_1fr] md:gap-10">
-        <div className="flex flex-col justify-center py-6 md:py-0">
-          <p className="text-sm text-graphite">Yeni Sezon · 2026</p>
-          <h1 className="mt-4 font-display text-[13vw] font-black leading-[0.92] tracking-tightest md:text-[5.2vw]">
-            Tarzını
-            <br />
-            Tamamla.
-          </h1>
-          <p className="mt-6 max-w-[40ch] text-[15px] leading-relaxed text-graphite">
-            Yeni sezon erkek koleksiyonu; t-shirt&apos;ten takım elbiseye,
-            günün her anına uygun sade ve güçlü parçalarla mağazamızda.
+    <section className="mx-auto max-w-content px-5 pt-6 md:px-8 md:pt-10">
+      <div className="grid overflow-hidden bg-[#111111] md:grid-cols-[0.95fr_1.05fr]">
+        <div className="flex flex-col justify-center px-7 py-12 text-white md:px-12 md:py-16">
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-white/60">
+            SHNWearMEN · Yeni Sezon
           </p>
+
+          <h1 className="font-display text-5xl font-black leading-[0.92] tracking-tight md:text-7xl">
+            Yeni Stil.
+            <br />
+            Yeni Sen.
+          </h1>
+
+          <p className="mt-6 max-w-[38ch] text-sm leading-relaxed text-white/70 md:text-base">
+            Günlük stilinden özel kombinlere kadar yeni sezon erkek
+            koleksiyonunu keşfet.
+          </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/kategori/tshirt"
-              className="bg-ink px-7 py-3.5 text-sm font-medium text-bone transition-colors hover:bg-graphite"
+              href="/kategori/yeni-gelenler"
+              className="bg-white px-7 py-3.5 text-sm font-semibold text-black transition hover:bg-white/90"
             >
-              Yeni Sezonu Keşfet
+              Koleksiyonu Keşfet
             </Link>
+
             <Link
               href="/kategori/takim-kombin"
-              className="border border-ink px-7 py-3.5 text-sm font-medium transition-colors hover:bg-ink hover:text-bone"
+              className="border border-white/40 px-7 py-3.5 text-sm font-medium text-white transition hover:border-white hover:bg-white hover:text-black"
             >
               Kombinleri İncele
             </Link>
           </div>
+
+          <div className="mt-10 flex gap-6 border-t border-white/15 pt-5 text-xs text-white/55">
+            <span>Beden seçenekleri</span>
+            <span>WhatsApp destek</span>
+            <span>Online sipariş</span>
+          </div>
         </div>
 
-        <div className="relative aspect-[4/5] w-full overflow-hidden bg-stone md:aspect-auto">
+        <div className="relative min-h-[520px] w-full bg-stone md:min-h-[620px]">
           <Image
             src={HERO_IMAGE}
-            alt="SHNWearMEN yeni sezon erkek koleksiyonu"
+            alt="SHNWearMEN erkek giyim koleksiyonu"
             fill
             priority
-            sizes="(min-width: 768px) 45vw, 100vw"
+            sizes="(min-width: 768px) 52vw, 100vw"
             className="object-cover"
           />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+
+          <div className="absolute bottom-5 left-5 bg-white px-4 py-2 text-xs font-medium text-black">
+            Yeni Sezon 2026
+          </div>
         </div>
       </div>
     </section>
