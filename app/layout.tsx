@@ -20,9 +20,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SHNWearMEN — Yeni Sezon Erkek Koleksiyonu",
+  title: "FORERWEAR — Yeni Sezon Erkek Koleksiyonu",
   description:
-    "SHNWearMEN erkek giyim mağazası. T-shirt, gömlek, jean, sweatshirt, ceket ve takım kombinlerinde yeni sezon koleksiyonunu keşfedin.",
+    "FORERWEAR erkek giyim mağazası. T-shirt, gömlek, jean, sweatshirt, ceket ve yeni sezon erkek koleksiyonunu keşfedin.",
 };
 
 export default function RootLayout({
@@ -32,7 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr">
-      <body className={`${archivo.variable} ${inter.variable} font-body bg-bone text-ink antialiased`}>
+      <body
+        className={`${archivo.variable} ${inter.variable} font-body bg-bone text-ink antialiased`}
+      >
         <CartProvider>
           <Header />
           <main>{children}</main>
