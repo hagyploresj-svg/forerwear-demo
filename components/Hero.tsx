@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="grid overflow-hidden bg-[#111111] md:grid-cols-[0.95fr_1.05fr]">
         <div className="flex flex-col justify-center px-7 py-12 text-white md:px-12 md:py-16">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-white/60">
-            SHNWearMEN · Yeni Sezon
+            FORERWEAR · Yeni Sezon
           </p>
 
           <h1 className="font-display text-5xl font-black leading-[0.92] tracking-tight md:text-7xl">
@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="relative min-h-[520px] w-full bg-stone md:min-h-[620px]">
           <Image
             src={HERO_IMAGE}
-            alt="SHNWearMEN erkek giyim koleksiyonu"
+            alt="FORERWEAR erkek giyim koleksiyonu"
             fill
             priority
             sizes="(min-width: 768px) 52vw, 100vw"
