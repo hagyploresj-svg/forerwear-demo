@@ -12,10 +12,11 @@ export default function InstagramGrid() {
       <div className="mx-auto max-w-content px-5 md:px-8">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="font-display text-2xl font-bold tracking-tightest md:text-3xl">
-            @SHNWearMEN
+            @FORERWEAR
           </h2>
+
           <a
-            href="https://instagram.com/shnwearmen"
+            href="https://instagram.com/forerwear"
             target="_blank"
             rel="noreferrer"
             className="text-sm text-graphite underline underline-offset-2 hover:text-ink"
@@ -23,9 +24,13 @@ export default function InstagramGrid() {
             Instagram&apos;da takip et
           </a>
         </div>
+
         <div className="grid grid-cols-4 gap-2 md:grid-cols-8">
           {images.map((img, i) => (
-            <div key={i} className="relative aspect-square overflow-hidden bg-stone/40">
+            <div
+              key={i}
+              className="relative aspect-square overflow-hidden bg-stone/40"
+            >
               <Image
                 src={img.src}
                 alt={img.alt}
