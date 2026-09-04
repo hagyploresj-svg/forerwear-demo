@@ -26,7 +26,7 @@ export default function Header() {
           href="/"
           className="font-display text-xl font-black tracking-tightest md:text-2xl"
         >
-          SHNWear<span className="text-graphite">MEN</span>
+          FORER<span className="text-graphite">WEAR</span>
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
@@ -48,6 +48,7 @@ export default function Header() {
           >
             Yeni Gelenler
           </Link>
+
           <button
             onClick={openDrawer}
             className="relative flex items-center gap-2"
@@ -64,6 +65,7 @@ export default function Header() {
               <path d="M6 8h12l-1 12H7L6 8Z" />
               <path d="M9 8V6a3 3 0 0 1 6 0v2" />
             </svg>
+
             {totalCount > 0 && (
               <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-ink text-[10px] font-medium text-bone">
                 {totalCount}
@@ -82,6 +84,7 @@ export default function Header() {
           >
             Yeni Gelenler
           </Link>
+
           {CATEGORIES.map((c) => (
             <Link
               key={c.slug}
